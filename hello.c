@@ -4,6 +4,7 @@
 
 int main() {
 	/* 我的第一个C程序 */
+	int i, j, k;
 	printf("Hello World!\n");
 	printf("int 存储大小: %lu \n", sizeof(int));
 	printf("float 存储最大字节数：%lu\n", sizeof(float));
