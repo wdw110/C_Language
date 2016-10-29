@@ -11,6 +11,7 @@ int main() {
 	printf("float 最小值：%E\n", FLT_MIN);
 	printf("float 最大值：%E\n", FLT_MAX);
 	printf("精度值：%d\n", FLT_DIG);
+	printf("Hello\tWorld\n\n");
 
 	return 0;
 }
