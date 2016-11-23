@@ -1,16 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 #include <limits.h>
 #include <float.h>
+#include <locale.h>
 
 int main() {
-	/* ÎÒµÄµÚÒ»¸öC³ÌĞò */
+	/* æˆ‘çš„ç¬¬ä¸€ä¸ªCç¨‹åº */
 	int i, j, k;
 	printf("Hello World!\n");
-	printf("int ´æ´¢´óĞ¡: %lu \n", sizeof(int));
-	printf("float ´æ´¢×î´ó×Ö½ÚÊı£º%lu\n", sizeof(float));
-	printf("float ×îĞ¡Öµ£º%E\n", FLT_MIN);
-	printf("float ×î´óÖµ£º%E\n", FLT_MAX);
-	printf("¾«¶ÈÖµ£º%d\n", FLT_DIG);
+	printf("int å­˜å‚¨å¤§å°: %lu \n", sizeof(int));
+	printf("float å­˜å‚¨æœ€å¤§å­—èŠ‚æ•°ï¼š%lu\n", sizeof(float));
+	printf("float æœ€å°å€¼ï¼š%E\n", FLT_MIN);
+	printf("float æœ€å¤§å€¼ï¼š%E\n", FLT_MAX);
+	printf("ç²¾åº¦å€¼ï¼š%d\n", FLT_DIG);
 	printf("Hello\tWorld\n\n");
 
 	int a = 21;
@@ -18,19 +20,19 @@ int main() {
 	int c;
 
 	c = a + b;
-	printf("Line 1 - cµÄÖµÊÇ %d\n", c);
+	printf("Line 1 - cçš„å€¼æ˜¯ %d\n", c);
 	c = a - b;
-	printf("Line 2 - cµÄÖµÊÇ %d\n", c);
+	printf("Line 2 - cçš„å€¼æ˜¯ %d\n", c);
 	c = a / b;
-	printf("Line 3 - cµÄÖµÊÇ %d\n", c);
+	printf("Line 3 - cçš„å€¼æ˜¯ %d\n", c);
 	c = a % b;
-	printf("Line 4 - cµÄÖµÊÇ %d\n", c);
+	printf("Line 4 - cçš„å€¼æ˜¯ %d\n", c);
 	c = a * b;
-	printf("Line 5 - cµÄÖµÊÇ %d\n", c);
+	printf("Line 5 - cçš„å€¼æ˜¯ %d\n", c);
 	c = a++;
-	printf("Line 6 - cµÄÖµÊÇ %d\n", c);
+	printf("Line 6 - cçš„å€¼æ˜¯ %d\n", c);
 	c = a--;
-	printf("Line 7 - cµÄÖµÊÇ %d\n", c);
+	printf("Line 7 - cçš„å€¼æ˜¯ %d\n", c);
 
 	return 0;
 }
