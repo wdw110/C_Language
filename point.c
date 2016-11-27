@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <time.h>
 
 const int MAX = 3;
+void getSeconds(unsigned long *par);
 
 int main()
 {
@@ -53,5 +55,38 @@ int main()
 		i++;
 	}
 
+	/* 指针的指针 */
+	int vva;
+	int *pp;
+	int **ppt;
+
+	vva = 300;
+
+	/* 获取vva的地址 */
+	pp = &vva;
+
+	/* 使用运算符&获取pp的地址 */
+	ppt = &pp;
+
+	/* 使用ppt获取值 */
+	printf("Value of vva = %d\n", vva);
+	printf("Value available at *pp = %d\n", *pp);
+	printf("Value available at **ppt = %d\n", **ppt);
+
+	/* 传递指针给函数 */
+	unsigned long sec;
+
+	getSeconds(&sec);
+
+	/* 输出实际值 */
+	printf("Number of seconds: %ld\n", sec);
+
 	return 0;
+}
+
+void getSeconds(unsigned long *par)
+{
+	/* 获取当前的秒数 */
+	*par = time(NULL);
+	return;
 }
